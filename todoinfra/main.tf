@@ -1,7 +1,16 @@
+# Ek chhota sa shehar tha, jahan ek developer apni zindagi badalne ke liye cloud infrastructure bana raha tha.
+# Usne socha, "Chalo Azure par ek todo app banate hain." 
+# Sabse pehle resource group banaya, phir virtual network, subnets, aur VMs. 
+# Har module ek naye sapne ki tarah tha, aur har resource ek nayi umeed.
+# Aakhirkar, database bhi bana diya, taki data safe rahe.
+# Is tarah, us developer ne apne sapno ka shehar terraform ki madad se khada kar diya.
+
 module "resource_group_name" {
   source              = "../modules/resource_group"
   resource_group_name = "rg_todoapp"
   resource_group_location = "Centralindia"
+  #Additional tags can be added here
+  #kahani likh do
   
 }
 module "virtual_network" {
